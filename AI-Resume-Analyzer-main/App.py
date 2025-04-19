@@ -82,7 +82,7 @@ def course_recommender(course_list):
 
 
 # connection to database
-connection = pymysql.connect(host= 'localhost', user='root', password='bhaveshk', db='cv')
+connection = pymysql.connect(host= 'localhost', user='root', password='sainath@23', db='cv')
 cursor = connection.cursor()
 
 def insert_data(name,email,res_score,timestamp,no_of_pages,reco_field,cand_level,skills,recommended_skills,courses):
@@ -103,7 +103,7 @@ def run():
     st.sidebar.markdown('# Choose User')
     activites = ['User', 'Admin']
     choice = st.sidebar.selectbox('Choose among the options:', activites)
-    link = '[@Developed by Bhavesh](https://www.linkedin.com/in/bhavesh-kabdwal/)'
+    link = '[@Developed by Lavanya](https://www.linkedin.com/in/bhavesh-kabdwal/)'
     st.sidebar.markdown(link, unsafe_allow_html=True)
 
     # creating database
